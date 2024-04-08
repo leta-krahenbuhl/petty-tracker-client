@@ -2,6 +2,7 @@ import "./Home.scss";
 import heroImage from "../../assets/images/hero-image.svg";
 import { useState } from "react";
 import NavigationLoggedOut from "../../Components/NavigationLoggedOut/NavigationLoggedOut";
+import HomeDashboard from "../../Components/HomeDashboard/HomeDashboard";
 
 export default function Home() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -15,7 +16,9 @@ export default function Home() {
         <h1 className="hero__heading">PETTY TRACKER</h1>
         <img src={heroImage} className="hero__image" alt="Italian Trulli"></img>
       </article>
-      <main className="home-main"></main>
+      <main className="home-main">
+        <HomeDashboard />
+      </main>
       <NavigationLoggedOut />
     </article>
   );

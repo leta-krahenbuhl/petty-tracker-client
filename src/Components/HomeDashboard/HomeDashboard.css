@@ -1,0 +1,56 @@
+.home-dashboard {
+  border-radius: 1.5rem 1.5rem 0 0;
+  background-color: #00174d;
+  color: white;
+  display: flex;
+  padding: 1.5rem 2rem 0rem 2rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  align-self: stretch;
+  min-height: 36rem;
+}
+.home-dashboard__button-container {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  margin: 1.5rem;
+}
+.home-dashboard__button-login {
+  font-weight: 700;
+  color: white;
+  border-radius: 1.2rem;
+  border: 2px solid #bfbbfe;
+  background: #07219b;
+  width: 100%;
+  height: 3rem;
+}
+.home-dashboard__button-signup {
+  font-weight: 700;
+  color: #07219b;
+  border-radius: 1.2rem;
+  border: 2px solid #07219b;
+  background: #fafafc;
+  width: 100%;
+  height: 3rem;
+}
+.home-dashboard__text {
+  text-align: left;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.home-dashboard__examples-container {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.home-dashboard__taskbar-container {
+  display: flex;
+  flex-direction: column;
+}
+.home-dashboard__text-small {
+  font-size: 0.8rem;
+  font-weight: 300;
+  text-align: left;
+  margin-bottom: 1rem;
+}/*# sourceMappingURL=HomeDashboard.css.map */
