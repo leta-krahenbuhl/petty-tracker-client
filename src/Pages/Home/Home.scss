@@ -6,7 +6,6 @@
 
 .hero {
   align-items: center;
-
   color: white;
   display: flex;
   padding: 4rem 2rem;
@@ -27,6 +26,7 @@
   &__heading {
     font-size: 0.8rem;
     font-weight: 900;
+    margin-bottom: 1rem;
   }
 
   &__image {

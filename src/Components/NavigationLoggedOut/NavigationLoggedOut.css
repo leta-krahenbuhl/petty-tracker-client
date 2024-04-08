@@ -1,0 +1,20 @@
+.navigation-logged-out {
+  position: fixed;
+  bottom: 0;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  width: 100vw;
+}
+.navigation-logged-out__white {
+  display: flex;
+  justify-content: space-evenly;
+  height: 6rem;
+  background-color: white;
+  border-radius: 100px 100px 0px 0px;
+  width: 100%;
+  align-items: center;
+}
+.navigation-logged-out__icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}/*# sourceMappingURL=NavigationLoggedOut.css.map */
