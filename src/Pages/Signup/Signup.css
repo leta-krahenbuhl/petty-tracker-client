@@ -1,4 +1,4 @@
-.login {
+.signup {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,31 +6,31 @@
   width: 100vw;
   padding: 1rem;
 }
-.login__header1 {
+.signup__header1 {
   font-size: 0.8rem;
   font-weight: 900;
   margin-bottom: 5rem;
   margin-top: 2rem;
 }
-.login__header2 {
+.signup__header2 {
   margin-bottom: 1rem;
 }
 
-.form-login {
+.form-signup {
   margin: 1rem 1rem 1rem 1rem;
   padding: 0.5rem 2rem 1.5rem 2rem;
   background-color: #00174d;
   border-radius: 1.5rem;
   width: 100%;
 }
-.form-login__label {
+.form-signup__label {
   display: block;
   margin-top: 1rem;
   font-size: 0.6rem;
   font-weight: 700;
   text-align: left;
 }
-.form-login__input {
+.form-signup__input {
   display: block;
   margin-top: 0.2rem;
   height: 3rem;
@@ -39,18 +39,21 @@
   width: 100%;
   padding-left: 0.5rem;
 }
-.form-login__button {
+.form-signup__button {
   font-weight: 700;
-  color: #07219b;
+  color: white;
   border-radius: 1.2rem;
-  border: 2px solid #07219b;
-  background: #fafafc;
+  border: 2px solid #bfbbfe;
+  background: #07219b;
   width: 40vw;
   height: 3rem;
   line-height: 2.8rem;
   font-size: 1rem;
+  background-color: green;
+  border: none;
+  width: 100%;
 }
-.form-login__signup {
+.form-signup__signup {
   font-weight: 700;
   color: white;
   border-radius: 1.2rem;
@@ -61,15 +64,15 @@
   line-height: 2.8rem;
   font-size: 1rem;
 }
-.form-login__button-container {
+.form-signup__button-container {
   display: flex;
   justify-content: center;
   gap: 1rem;
   margin-top: 1.5rem;
 }
-.form-login__cancel {
+.form-signup__cancel {
   font-weight: 400;
   width: 40vw;
   font-style: italic;
   margin-top: 3rem;
-}/*# sourceMappingURL=Login.css.map */
+}/*# sourceMappingURL=Signup.css.map */

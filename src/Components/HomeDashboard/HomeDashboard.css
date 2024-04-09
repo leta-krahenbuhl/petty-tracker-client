@@ -26,6 +26,7 @@
   width: 40vw;
   height: 3rem;
   line-height: 2.8rem;
+  font-size: 1rem;
 }
 .home-dashboard__button-signup {
   font-weight: 700;
@@ -36,6 +37,7 @@
   width: 40vw;
   height: 3rem;
   line-height: 2.8rem;
+  font-size: 1rem;
 }
 .home-dashboard__text {
   text-align: left;

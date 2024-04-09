@@ -12,7 +12,7 @@ export default function HomeDashboard(): JSX.Element | null | string {
         <Link to="/login">
           <div className="home-dashboard__button-login">LOGIN</div>
         </Link>
-        <Link to="/login">
+        <Link to="/signup">
           <div className="home-dashboard__button-signup">SIGN UP</div>
         </Link>
       </article>

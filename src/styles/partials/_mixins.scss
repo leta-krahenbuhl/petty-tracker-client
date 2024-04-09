@@ -7,6 +7,7 @@
   width: 40vw;
   height: 3rem;
   line-height: 2.8rem;
+  font-size: 1rem;
 }
 
 @mixin btn-light {
@@ -18,4 +19,11 @@
   width: 40vw;
   height: 3rem;
   line-height: 2.8rem;
+  font-size: 1rem;
+}
+
+@mixin cancel {
+  font-weight: 400;
+  width: 40vw;
+  font-style: italic;
 }
