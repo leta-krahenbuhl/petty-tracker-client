@@ -4,8 +4,8 @@ import { useState } from "react";
 import NavigationLoggedOut from "../../Components/NavigationLoggedOut/NavigationLoggedOut";
 import HomeDashboard from "../../Components/HomeDashboard/HomeDashboard";
 
-export default function Home() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+export default function Home(): JSX.Element | null | string {
+  const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
 
   return (
     <article className="home">

@@ -8,12 +8,13 @@
   align-items: center;
   gap: 1rem;
   align-self: stretch;
-  min-height: 36rem;
+  min-height: 38rem;
 }
 .home-dashboard__button-container {
   display: flex;
+  justify-content: center;
   gap: 1rem;
-  width: 100%;
+  width: 100vw;
   margin: 1.5rem;
 }
 .home-dashboard__button-login {
@@ -22,8 +23,9 @@
   border-radius: 1.2rem;
   border: 2px solid #bfbbfe;
   background: #07219b;
-  width: 100%;
+  width: 40vw;
   height: 3rem;
+  line-height: 2.8rem;
 }
 .home-dashboard__button-signup {
   font-weight: 700;
@@ -31,17 +33,19 @@
   border-radius: 1.2rem;
   border: 2px solid #07219b;
   background: #fafafc;
-  width: 100%;
+  width: 40vw;
   height: 3rem;
+  line-height: 2.8rem;
 }
 .home-dashboard__text {
   text-align: left;
   font-weight: 700;
-  margin-bottom: 1rem;
+  width: 100%;
 }
 .home-dashboard__examples-container {
   display: flex;
   gap: 1rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 .home-dashboard__taskbar-container {

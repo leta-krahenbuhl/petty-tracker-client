@@ -2,7 +2,7 @@ import "./NavigationLoggedOut.scss";
 import navLogIn from "../../assets/images/nav-login.svg";
 import navSignUp from "../../assets/images/nav-signup.svg";
 
-export default function NavigationLoggedOut() {
+export default function NavigationLoggedOut(): JSX.Element | null | string {
   return (
     <nav className="navigation-logged-out">
       <article className="navigation-logged-out__white">

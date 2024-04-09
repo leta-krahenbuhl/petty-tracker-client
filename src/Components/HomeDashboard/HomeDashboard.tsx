@@ -3,19 +3,23 @@ import taskBar1 from "../../assets/images/task-bartask-bars-1.svg";
 import taskBar2 from "../../assets/images/task-bartask-bars-2.svg";
 import taskBar3 from "../../assets/images/task-bartask-bars-3.svg";
 import taskBar4 from "../../assets/images/task-bartask-bars-4.svg";
+import { Link } from "react-router-dom";
 
-export default function HomeDashboard() {
-  //   const [isLoggedIn, setIsLoggedIn] = useState(false);
-
+export default function HomeDashboard(): JSX.Element | null | string {
   return (
     <article className="home-dashboard">
       <article className="home-dashboard__button-container">
-        <button className="home-dashboard__button-login">LOGIN</button>
-        <button className="home-dashboard__button-signup">SIGN UP</button>
+        <Link to="/login">
+          <div className="home-dashboard__button-login">LOGIN</div>
+        </Link>
+        <Link to="/login">
+          <div className="home-dashboard__button-signup">SIGN UP</div>
+        </Link>
       </article>
       <p className="home-dashboard__text">
         The place for you to track who has been doing what around the house...
       </p>
+
       <div className="home-dashboard__examples-container">
         <div className="home-dashboard__taskbar-container">
           <img src={taskBar1} alt="example-task1" />
