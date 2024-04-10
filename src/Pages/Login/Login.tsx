@@ -26,6 +26,7 @@ export default function Login({
     // with this user if it finds it
     setUserId("123");
     setIsLoggedIn(true);
+    localStorage.setItem("isLoggedIn", true.toString());
     navigate(`/user${123}`); // change 123 to userId (import as prop)
   }
 

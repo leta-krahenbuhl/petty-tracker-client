@@ -7,7 +7,9 @@ import UserDashboard from "./Pages/UserDashboard/UserDashboard";
 import { useState } from "react";
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
+  const [isLoggedIn, setIsLoggedIn] = useState<boolean>(
+    localStorage.getItem("isLoggedIn") === "true"
+  );
   const [userId, setUserId] = useState<string>("");
 
   console.log(userId);
