@@ -27,6 +27,9 @@ export default function Signup(): JSX.Element | null | string {
       email: email,
       password: password,
     };
+
+    console.log(newUser);
+
     // POST request with info to backend
     // create type for object to receive back?
   }
