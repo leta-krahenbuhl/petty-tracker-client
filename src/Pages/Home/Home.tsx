@@ -1,12 +1,9 @@
 import "./Home.scss";
 import heroImage from "../../assets/images/hero-image.svg";
-import { useState } from "react";
 import NavigationLoggedOut from "../../Components/NavigationLoggedOut/NavigationLoggedOut";
 import HomeDashboard from "../../Components/HomeDashboard/HomeDashboard";
 
 export default function Home(): JSX.Element | null | string {
-  const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
-
   return (
     <article className="home">
       <article className="hero">

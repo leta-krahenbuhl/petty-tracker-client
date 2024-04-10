@@ -4,16 +4,37 @@ import Home from "./Pages/Home/Home";
 import Login from "./Pages/Login/Login";
 import Signup from "./Pages/Signup/Signup";
 import UserDashboard from "./Pages/UserDashboard/UserDashboard";
+import { useState } from "react";
 
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
+  const [userId, setUserId] = useState<string>("");
+
+  console.log(userId);
+  console.log(isLoggedIn);
+
   return (
     <BrowserRouter>
       <div className="app">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
+          <Route
+            path="/login"
+            element={
+              <Login setIsLoggedIn={setIsLoggedIn} setUserId={setUserId} />
+            }
+          />
           <Route path="/signup" element={<Signup />} />
-          <Route path="/user-dashboard" element={<UserDashboard />} />
+          <Route
+            path={`/user${userId}`}
+            element={
+              isLoggedIn ? (
+                <UserDashboard />
+              ) : (
+                <Login setIsLoggedIn={setIsLoggedIn} setUserId={setUserId} />
+              )
+            }
+          />
           {/* 
         <Route path="/forgot-pw" element={<ForgotPW />} />
         <Route path="/set-new-pw" element={<SetNewPassword />} />

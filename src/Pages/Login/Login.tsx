@@ -1,19 +1,32 @@
 import "./Login.scss";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-export default function Login(): JSX.Element | null | string {
+export default function Login({
+  setIsLoggedIn,
+  setUserId,
+}: {
+  setIsLoggedIn: (isLoggedIn: boolean) => void;
+  setUserId: (userId: string) => void;
+}): JSX.Element | null | string {
   const [username, setUsername] = useState<string>("");
   const [password, setPassword] = useState<string>("");
-  const [userId, setUserId] = useState("");
+  const navigate = useNavigate();
 
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const formData = new FormData(e.target as HTMLFormElement);
     setUsername(formData.get("name") as string);
     setPassword(formData.get("password") as string);
+
     // send info to backend, create type for object to send and object
     // to receive
+    // object that gets sent back should have the user Id identified
+    // with this user if it finds it
+    setUserId("123");
+    setIsLoggedIn(true);
+    navigate(`/user${123}`); // change 123 to userId (import as prop)
   }
 
   return (
