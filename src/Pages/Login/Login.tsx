@@ -30,6 +30,7 @@ export default function Login(): JSX.Element | null | string {
               placeholder="Username"
               onChange={(e) => setUsername(e.target.value)}
               name="name"
+              value={username}
             />
           </label>
           <label className="form-login__label">
@@ -41,6 +42,7 @@ export default function Login(): JSX.Element | null | string {
               placeholder="Password"
               onChange={(e) => setPassword(e.target.value)}
               name="password"
+              value={password}
             />
           </label>
         </div>

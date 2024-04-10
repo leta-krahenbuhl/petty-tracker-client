@@ -1,6 +1,7 @@
 import "./Signup.scss";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { type NewUser } from "../../types";
 
 export default function Signup(): JSX.Element | null | string {
   const [username, setUsername] = useState<string>("");
@@ -19,8 +20,15 @@ export default function Signup(): JSX.Element | null | string {
       alert("Your passwords do not match.");
       return;
     }
-    // POST request with info to backend, create type for object to
-    // send and object to receive
+
+    const newUser: NewUser = {
+      id: new Date().getTime().toString(),
+      username: username,
+      email: email,
+      password: password,
+    };
+    // POST request with info to backend
+    // create type for object to receive back?
   }
 
   return (
@@ -38,6 +46,7 @@ export default function Signup(): JSX.Element | null | string {
               placeholder="Username"
               onChange={(e) => setUsername(e.target.value)}
               name="name"
+              value={username}
             />
           </label>
           <label className="form-signup__label">
@@ -49,6 +58,7 @@ export default function Signup(): JSX.Element | null | string {
               placeholder="Username"
               onChange={(e) => setEmail(e.target.value)}
               name="email"
+              value={email}
             />
           </label>
           <label className="form-signup__label">
@@ -60,6 +70,7 @@ export default function Signup(): JSX.Element | null | string {
               placeholder="Password"
               onChange={(e) => setPassword(e.target.value)}
               name="password"
+              value={password}
             />
           </label>
           <label className="form-signup__label">
@@ -71,6 +82,7 @@ export default function Signup(): JSX.Element | null | string {
               placeholder="Password"
               onChange={(e) => setConfirmPassword(e.target.value)}
               name="confirm-password"
+              value={confirmPassword}
             />
           </label>
         </div>
