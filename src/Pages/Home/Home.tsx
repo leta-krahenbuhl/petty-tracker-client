@@ -14,7 +14,11 @@ export default function Home(): JSX.Element | null | string {
           Not getting credit for doing all the housework...?
         </p>
         <h1 className="hero__heading">PETTY TRACKER</h1>
-        <img src={heroImage} className="hero__image" alt="Italian Trulli"></img>
+        <img
+          src={heroImage}
+          className="hero__image"
+          alt="woman dusting a book shelf"
+        ></img>
       </article>
       <main className="home-main">
         <HomeDashboard />

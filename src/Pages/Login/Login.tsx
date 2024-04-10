@@ -1,10 +1,11 @@
 import "./Login.scss";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Login(): JSX.Element | null | string {
   const [username, setUsername] = useState<string>("");
   const [password, setPassword] = useState<string>("");
+  const [userId, setUserId] = useState("");
 
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();

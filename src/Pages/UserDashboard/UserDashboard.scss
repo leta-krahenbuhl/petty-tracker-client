@@ -1,0 +1,21 @@
+@use "../../styles/partials/mixins" as *;
+
+.user-dashboard {
+  padding: 0 2rem 2rem 1rem;
+  text-align: left;
+
+  &__header1 {
+    @include h1;
+    text-align: center;
+  }
+
+  &__greeting {
+    font-size: 2rem;
+  }
+
+  &__text1 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+}

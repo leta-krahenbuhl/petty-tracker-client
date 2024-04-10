@@ -1,0 +1,19 @@
+.user-dashboard {
+  padding: 0 2rem 2rem 1rem;
+  text-align: left;
+}
+.user-dashboard__header1 {
+  font-size: 0.8rem;
+  font-weight: 900;
+  margin-bottom: 5rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+.user-dashboard__greeting {
+  font-size: 2rem;
+}
+.user-dashboard__text1 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}/*# sourceMappingURL=UserDashboard.css.map */
