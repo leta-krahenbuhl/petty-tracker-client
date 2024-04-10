@@ -7,16 +7,16 @@ export default function NavigationLoggedIn(): JSX.Element | null | string {
   return (
     <nav className="navigation-logged-in">
       <article className="navigation-logged-in__white">
-        <Link to="/login">
+        <Link to="/">
           <img
-            src={navToDo}
+            src={navHome}
             alt="log-in icon"
             className="navigation-logged-in__icon"
           />
         </Link>
-        <Link to="/signup">
+        <Link to="/">
           <img
-            src={navHome}
+            src={navToDo}
             alt="log-in icon"
             className="navigation-logged-in__icon"
           />

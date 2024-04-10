@@ -1,0 +1,17 @@
+.homes {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 8px;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+.homes__header3 {
+  color: black;
+  font-weight: 500;
+}
+.homes__container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}/*# sourceMappingURL=Homes.css.map */

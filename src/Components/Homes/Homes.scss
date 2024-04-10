@@ -1,0 +1,21 @@
+@use "../../styles/partials/variables" as *;
+
+.homes {
+  display: flex;
+  flex-direction: column;
+  background-color: $primary2-font;
+  border-radius: 8px;
+  margin-top: 2rem;
+  padding: 1rem;
+
+  &__header3 {
+    color: $primary4-font;
+    font-weight: 500;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+}

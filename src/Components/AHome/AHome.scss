@@ -1,0 +1,29 @@
+@use "../../styles/partials/variables" as *;
+
+.ahome {
+  background-color: $primary5-background-medium;
+  color: $primary2-font;
+  border-radius: 20px;
+  padding: 1.5rem;
+  width: 50%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+
+  &__boatname {
+    font-weight: 700;
+  }
+
+  &__go-to-home {
+    background-color: $primary1-background;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    margin-top: 1rem;
+    color: $primary2-font;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+    width: 100%;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
