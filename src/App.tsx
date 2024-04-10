@@ -26,7 +26,7 @@ function App() {
           />
           <Route path="/signup" element={<Signup />} />
           <Route
-            path={`/user${userId}`}
+            path={`/user123`} //change to {userId}!
             element={
               isLoggedIn ? (
                 <UserDashboard />
