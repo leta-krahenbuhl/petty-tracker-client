@@ -12,9 +12,9 @@ export default function Signup(): JSX.Element | null | string {
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const formData = new FormData(e.target as HTMLFormElement);
-    setUsername(formData.get("name") as string);
-    setEmail(formData.get("email") as string);
-    setPassword(formData.get("password") as string);
+    setUsername(formData.get("name") as string); //needed? got value?
+    setEmail(formData.get("email") as string); //needed? got value?
+    setPassword(formData.get("password") as string); //needed? got value?
 
     if (password !== confirmPassword) {
       alert("Your passwords do not match.");

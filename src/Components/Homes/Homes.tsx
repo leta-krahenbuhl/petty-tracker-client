@@ -1,7 +1,28 @@
+import { useState } from "react";
 import AHome from "../AHome/AHome";
 import "./Homes.scss";
+import { type Home } from "../../types";
 
 export default function Homes(): JSX.Element | null | string {
+  const [isAddHomeVisible, setIsAddHomeVisible] = useState<boolean>(false);
+  const [homeName, setHomeName] = useState<string>("");
+  const [inhabitants, setInhabitants] = useState<string[]>([]);
+
+  function addHome(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    const formData = new FormData(e.target as HTMLFormElement);
+
+    const newHome: Home = {
+      name: homeName,
+      inhabitants: [], // set up a state for this in other component?
+    };
+
+    console.log(newHome);
+
+    //send HomeObject to backend
+    //declare type of object to receive back??
+  }
+
   return (
     <article className="homes">
       <h3 className="homes__header3">Your Homes</h3>
@@ -9,6 +30,37 @@ export default function Homes(): JSX.Element | null | string {
         <AHome />
         <AHome />
       </div>
+      {isAddHomeVisible ? (
+        <form className="form-add-home" onSubmit={addHome}>
+          <label className="form-signup__label">
+            <input
+              className="form-add-home__input"
+              type="text"
+              placeholder="your new home"
+              onChange={(e) => setHomeName(e.target.value)}
+              name="homeName"
+              value={homeName}
+            />
+          </label>
+          <button className="homes__add-home" type="submit">
+            ADD HOME
+          </button>
+        </form>
+      ) : (
+        ""
+      )}
+      {isAddHomeVisible ? (
+        ""
+      ) : (
+        <button
+          className="homes__add-home"
+          onClick={() => {
+            setIsAddHomeVisible(true);
+          }}
+        >
+          + NEW HOME
+        </button>
+      )}
     </article>
   );
 }

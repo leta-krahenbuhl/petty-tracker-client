@@ -5,13 +5,25 @@
   border-radius: 8px;
   margin-top: 2rem;
   padding: 1rem;
+  margin-bottom: 8rem;
 }
 .homes__header3 {
   color: black;
   font-weight: 500;
+  margin-top: 0.5rem;
 }
 .homes__container {
   display: flex;
   flex-direction: row;
   gap: 1rem;
+}
+.homes__add-home {
+  color: #1328c2;
+  background-color: white;
+  font-weight: 700;
+  border-radius: 20px;
+  border: 3px solid #1328c2;
+  height: 2rem;
+  width: calc(50% - 0.8rem);
+  margin-top: 1rem;
 }/*# sourceMappingURL=Homes.css.map */

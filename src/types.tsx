@@ -22,5 +22,5 @@ export type Task = {
 
 export type Home = {
   name: string;
-  inhabitants: User[];
+  inhabitants: string[];
 };

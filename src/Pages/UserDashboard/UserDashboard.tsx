@@ -2,7 +2,6 @@ import Homes from "../../Components/Homes/Homes";
 import NavigationLoggedIn from "../../Components/NavigationLoggedIn/NavigationLoggedIn";
 import "./UserDashboard.scss";
 // import { useState } from "react";
-// import { Link } from "react-router-dom";
 
 export default function UserDashboard(): JSX.Element | null | string {
   return (
