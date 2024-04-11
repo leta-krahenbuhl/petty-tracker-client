@@ -1,5 +1,6 @@
 import Homes from "../../Components/Homes/Homes";
 import NavigationLoggedIn from "../../Components/NavigationLoggedIn/NavigationLoggedIn";
+import Tasks from "../../Components/Tasks/Tasks";
 import "./UserDashboard.scss";
 // import { useState } from "react";
 
@@ -13,6 +14,7 @@ export default function UserDashboard(): JSX.Element | null | string {
           You can use this dashboard to keep track of your home and tasks
         </p>
         <Homes />
+        <Tasks />
       </main>
       <NavigationLoggedIn />
     </>

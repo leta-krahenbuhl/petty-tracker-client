@@ -1,0 +1,16 @@
+.task {
+  width: 100%;
+}
+.task__item {
+  display: flex;
+  align-items: center;
+  color: black;
+  background-color: #bfbbfe;
+  height: 2.5rem;
+  width: 100%;
+  padding-left: 0.5rem;
+  border-radius: 0 20px 20px 0px;
+}
+.task__item--done {
+  background-color: #8282f7;
+}/*# sourceMappingURL=Task.css.map */

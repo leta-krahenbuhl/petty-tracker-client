@@ -1,13 +1,13 @@
 @use "../../styles/partials/variables" as *;
 
-.homes {
+.tasks {
   display: flex;
   flex-direction: column;
   background-color: $primary2-font;
   border-radius: 8px;
   margin-top: 2rem;
   padding: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 8rem;
 
   &__header3 {
     color: $primary4-font;

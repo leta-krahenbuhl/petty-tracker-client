@@ -1,0 +1,18 @@
+@use "../../styles/partials/variables" as *;
+
+.task {
+  width: 100%;
+  &__item {
+    display: flex;
+    align-items: center;
+    color: $primary4-font;
+    background-color: $primary6-task-undone;
+    height: 2.5rem;
+    width: 100%;
+    padding-left: 0.5rem;
+    border-radius: 0 20px 20px 0px;
+    &--done {
+      background-color: $primary6-task-done;
+    }
+  }
+}

@@ -1,23 +1,23 @@
-.homes {
+.tasks {
   display: flex;
   flex-direction: column;
   background-color: white;
   border-radius: 8px;
   margin-top: 2rem;
   padding: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 8rem;
 }
-.homes__header3 {
+.tasks__header3 {
   color: black;
   font-weight: 500;
   margin-top: 0.5rem;
 }
-.homes__container {
+.tasks__container {
   display: flex;
   flex-direction: row;
   gap: 1rem;
 }
-.homes__add-home {
+.tasks__add-home {
   color: #218702;
   background-color: white;
   font-weight: 700;
@@ -28,4 +28,4 @@
   padding-left: 1rem;
   padding-right: 1rem;
   width: 100%;
-}/*# sourceMappingURL=Homes.css.map */
+}/*# sourceMappingURL=Tasks.css.map */
