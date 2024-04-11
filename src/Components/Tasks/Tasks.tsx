@@ -21,11 +21,15 @@ export default function Tasks(): JSX.Element | null | string {
     setAllTasks([...allTasks, newTask]);
   }
 
+  function renderAllTasks() {
+    //hmmm
+  }
+
   return (
     <article className="tasks">
       <h3 className="tasks__header3">Your Tasks</h3>
       <div className="tasks__container">
-        <Task />
+        <Task allTasks={allTasks} />
       </div>
       {isAddTaskVisible ? (
         <form className="form-add-task" onSubmit={addTask}>
