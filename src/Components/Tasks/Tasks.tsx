@@ -6,16 +6,19 @@ import { type TaskType } from "../../types";
 export default function Tasks(): JSX.Element | null | string {
   const [isAddTaskVisible, setIsAddTaskVisible] = useState<boolean>(false);
   const [taskName, setTaskName] = useState<string>("");
+  const [allTasks, setAllTasks] = useState<TaskType[]>([]);
 
   function addTask(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
 
+    //put this type into the type file?
     const newTask: TaskType = {
       description: taskName,
       completed: false,
       owner: { id: "123" },
     };
-    console.log(newTask);
+    // send this to backend...
+    setAllTasks([...allTasks, newTask]);
   }
 
   return (

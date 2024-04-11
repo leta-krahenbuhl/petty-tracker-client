@@ -12,8 +12,8 @@ function App() {
   );
   const [userId, setUserId] = useState<string>("");
 
-  console.log(userId);
-  console.log(isLoggedIn);
+  // console.log(userId);
+  // console.log(isLoggedIn);
 
   return (
     <BrowserRouter>
