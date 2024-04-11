@@ -2,19 +2,22 @@ import "./Signup.scss";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { type NewUser } from "../../types";
+import { useNavigate } from "react-router-dom";
 
 export default function Signup(): JSX.Element | null | string {
   const [username, setUsername] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [password, setPassword] = useState<string>("");
   const [confirmPassword, setConfirmPassword] = useState<string>("");
+  const navigate = useNavigate();
 
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    const formData = new FormData(e.target as HTMLFormElement);
-    setUsername(formData.get("name") as string); //needed? got value?
-    setEmail(formData.get("email") as string); //needed? got value?
-    setPassword(formData.get("password") as string); //needed? got value?
+    // Below is not needed as controlled input sets states already
+    // const formData = new FormData(e.target as HTMLFormElement);
+    // setUsername(formData.get("name") as string);
+    // setEmail(formData.get("email") as string);
+    // setPassword(formData.get("password") as string);
 
     if (password !== confirmPassword) {
       alert("Your passwords do not match.");
@@ -28,10 +31,11 @@ export default function Signup(): JSX.Element | null | string {
       password: password,
     };
 
-    console.log(newUser);
+    // console.log(newUser);
 
     // POST request with info to backend
     // create type for object to receive back?
+    navigate(`/user${123}`); // change 123 to  newUser.id to navigate to user dashboard
   }
 
   return (

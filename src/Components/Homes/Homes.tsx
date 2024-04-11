@@ -6,15 +6,13 @@ import { type Home } from "../../types";
 export default function Homes(): JSX.Element | null | string {
   const [isAddHomeVisible, setIsAddHomeVisible] = useState<boolean>(false);
   const [homeName, setHomeName] = useState<string>("");
-  const [inhabitants, setInhabitants] = useState<string[]>([]);
 
   function addHome(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    const formData = new FormData(e.target as HTMLFormElement);
 
     const newHome: Home = {
       name: homeName,
-      inhabitants: [], // set up a state for this in other component?
+      inhabitants: [],
     };
 
     console.log(newHome);
@@ -22,6 +20,8 @@ export default function Homes(): JSX.Element | null | string {
     //send HomeObject to backend
     //declare type of object to receive back??
   }
+
+  // Function to get homes from backend
 
   return (
     <article className="homes">
@@ -43,7 +43,7 @@ export default function Homes(): JSX.Element | null | string {
             />
           </label>
           <button className="homes__add-home" type="submit">
-            ADD HOME
+            CLICK TO ADD YOUR NEW HOME
           </button>
         </form>
       ) : (

@@ -24,3 +24,5 @@ export type Home = {
   name: string;
   inhabitants: string[];
 };
+
+export type AllHomes = Home[];
