@@ -14,7 +14,7 @@ export type User = {
   id: string;
 };
 
-export type Task = {
+export type TaskType = {
   description: string;
   completed: boolean;
   owner: User | "unassigned";

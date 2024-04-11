@@ -1,4 +1,5 @@
 @use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
 
 .tasks {
   display: flex;
@@ -21,16 +22,28 @@
     gap: 1rem;
   }
 
-  &__add-home {
-    color: $primary6-add-btn;
-    background-color: $primary2-font;
-    font-weight: 700;
-    border-radius: 20px;
-    border: 3px solid $primary6-add-btn;
+  &__add-tasks {
+    @include btn2;
+  }
+
+  &__cancel-tasks {
+    @include btn2;
+    color: $primary9-cancel;
+    border: 3px solid $primary9-cancel;
+  }
+
+  &__button-container {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+.form-add-task {
+  &__input {
+    padding-left: 0.5rem;
+    border-radius: 5px;
     height: 2rem;
-    margin-top: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    width: 100%;
+    border: 1px solid grey;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
   }
 }

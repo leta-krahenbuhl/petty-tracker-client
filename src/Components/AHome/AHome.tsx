@@ -1,6 +1,6 @@
 import "./AHome.scss";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+// import { useState } from "react";
 
 export default function AHome(): JSX.Element | null | string {
   //   const [inhabitants, setInhabitants] = useState<string[]>([]);

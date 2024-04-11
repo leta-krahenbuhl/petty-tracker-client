@@ -21,6 +21,11 @@
     gap: 1rem;
   }
 
+  &__button-container {
+    display: flex;
+    gap: 1rem;
+  }
+
   &__add-home {
     color: $primary6-add-btn;
     background-color: $primary2-font;

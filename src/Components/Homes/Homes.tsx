@@ -42,9 +42,17 @@ export default function Homes(): JSX.Element | null | string {
               value={homeName}
             />
           </label>
-          <button className="homes__add-home" type="submit">
-            CLICK TO ADD YOUR NEW HOME
-          </button>
+          <div className="homes__button-container">
+            <button className="homes__add-home" type="submit">
+              ADD NEW HOME
+            </button>
+            <button
+              className="tasks__cancel-tasks"
+              onClick={() => setIsAddHomeVisible(false)}
+            >
+              CANCEL
+            </button>
+          </div>
         </form>
       ) : (
         ""

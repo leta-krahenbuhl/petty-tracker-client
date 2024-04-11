@@ -24,9 +24,11 @@ export default function NavigationLoggedIn(): JSX.Element | null | string {
         </Link>
         <button>
           <img
+            // need to change image to a logout image!
             src={navToDo}
             alt="log-in icon"
             className="navigation-logged-in__button"
+            // currently a logout button...
             onClick={logOut}
           />
         </button>

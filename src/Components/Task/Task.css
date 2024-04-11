@@ -13,4 +13,5 @@
 }
 .task__item--done {
   background-color: #8282f7;
+  text-decoration: line-through;
 }/*# sourceMappingURL=Task.css.map */
